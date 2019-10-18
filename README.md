@@ -51,10 +51,10 @@ As is common for _sbt_ plugins, you will usually want to install this plugin by 
 repository.
 
 However, adding the plugin alone is _not_ usually sufficient to get a workable installation. _Orchid_ is configured in large part
-by dynamically loading a variety of themes and plugins, which you will want to add the the `libraryDependencies` _of your build, not your project_.
+by dynamically loading a variety of themes and plugins, which you will want to add to the `libraryDependencies` _of your build, not your project_.
 
 An easy, clean way to deal with that is just to add these extra dependencies in your `project/plugins.sbt` file:
-```
+```scala
 resolvers += Resolver.jcenterRepo // hosts Orchid and its components
 
 addSbtPlugin("com.mchange" % "sbt-orchid" % "0.0.1")
