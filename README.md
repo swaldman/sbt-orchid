@@ -78,6 +78,14 @@ libraryDependencies += orchidComponent( "OrchidCore" )
  *  Uncomment the components you desire
  */
 
+/* Themes -- see https://orchid.netlify.com/themes */
+/* Don't forget to set 'orchidTheme' in build.sbt! */
+
+// libraryDependencies += orchidComponent( "OrchidBsDoc" )
+// libraryDependencies += orchidComponent( "OrchidCopper" )
+// libraryDependencies += orchidComponent( "OrchidEditorial" )
+// libraryDependencies += orchidComponent( "OrchidFutureImperfect" )
+
 /* Plugins -- see https://orchid.netlify.com/plugins */
 
 // libraryDependencies += orchidComponent( "OrchidPages" )
@@ -107,15 +115,6 @@ libraryDependencies += orchidComponent( "OrchidCore" )
 // libraryDependencies += orchidComponent( "OrchidTaxonomies" )
 // libraryDependencies += orchidComponent( "OrchidWiki" )
 // libraryDependencies += orchidComponent( "OrchidWritersBlocks" )
-
-/* Themes -- see https://orchid.netlify.com/themes */
-/*                                                 */
-/* Don't forget to set 'orchidTheme' in build.sbt! */
-
-// libraryDependencies += orchidComponent( "OrchidBsDoc" )
-// libraryDependencies += orchidComponent( "OrchidCopper" )
-// libraryDependencies += orchidComponent( "OrchidEditorial" )
-// libraryDependencies += orchidComponent( "OrchidFutureImperfect" )
 
 ```
 
