@@ -62,6 +62,7 @@ addSbtPlugin("com.mchange" % "sbt-orchid" % "0.0.1")
 /*
  *  Add desired Orchid components to the build
  */
+ 
 val OrchidVersion = "0.17.6"
 
 def orchidComponent( name : String ) = "io.github.javaeden.orchid" % name % OrchidVersion
