@@ -45,6 +45,18 @@ Hit [CTRL-C] to stop the server and quit Orchid
 
 To just ensure that the site gets built without pausing to browse with a webserver, use `orchidBuild` instead of `orchidServe`.
 
+### Configuration
+
+In `build.sbt`, you will usually want to define a theme. For example...
+
+```
+orchidTheme := "BsDoc"
+```
+
+Make sure the theme is available, see [Setup](#setup) below for how to bring in components.
+
+For less commonly used confiuration settings, see the [Appendix](#appendix).
+
 ### Setup
 
 As is common for _sbt_ plugins, you will usually want to install this plugin by adding it to `project/plugins.sbt` in your
@@ -117,6 +129,20 @@ libraryDependencies += orchidComponent( "OrchidCore" )
 // libraryDependencies += orchidComponent( "OrchidWritersBlocks" )
 
 ```
+
+### Appendix
+
+#### Configuration Settings (`build.sbt`)
+
+* orchidBaseUrl ~ The base URL for generted site links
+* orchidDestination ~ The directory into which orchid sites are generated
+* orchidDryDeploy ~ Allows running a dry deploy instead of a full deploy
+* orchidEnvironment ~ The environment used to run the orchid site.
+* orchidPort ~ The port to run the dev server on.
+* orchidSource ~ The source directory for orchid documents
+* orchidTheme ~ The theme that will be imposed on the generated orchid site
+* orchidVersion ~ The version of the orchid site
+
 
 
 
