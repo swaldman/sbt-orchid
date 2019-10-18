@@ -134,14 +134,14 @@ libraryDependencies += orchidComponent( "OrchidCore" )
 
 #### Configuration Settings (`build.sbt`)
 
-* orchidBaseUrl ~ The base URL for generted site links
-* orchidDestination ~ The directory into which orchid sites are generated
-* orchidDryDeploy ~ Allows running a dry deploy instead of a full deploy
-* orchidEnvironment ~ The environment used to run the orchid site.
-* orchidPort ~ The port to run the dev server on.
-* orchidSource ~ The source directory for orchid documents
-* orchidTheme ~ The theme that will be imposed on the generated orchid site
-* orchidVersion ~ The version of the orchid site
+* `orchidBaseUrl` ~ The base URL for generted site links
+* `orchidDestination` ~ The directory into which orchid sites are generated
+* `orchidDryDeploy` ~ Allows running a dry deploy instead of a full deploy
+* `orchidEnvironment` ~ The environment used to run the orchid site.
+* `orchidPort` ~ The port to run the dev server on.
+* `orchidSource` ~ The source directory for orchid documents
+* `orchidTheme `~ The theme that will be imposed on the generated orchid site
+* `orchidVersion` ~ The version of the orchid site
 
 
 
