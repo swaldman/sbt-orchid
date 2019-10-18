@@ -14,12 +14,84 @@ and delivers a site to `target/orchid`.
 
 For information about what the source directory should contain, it's best to go through the [Orchid tutorials](https://orchid.netlify.com/wiki/learn) (source repository [here](https://github.com/JavaEden/OrchidTutorials)).
 
+---
+
 **Note: The gradle-project directory `src/orchid/resources` referred to in the tutorials becomes `src/main/orchid` (with _no_ "resources" directory) under this sbt plugin.**
 
 If you don't like this choice, you can define any soure directory you'd like for your Orchid site via the setting `orchidSource`.
 
+---
+
 Once you have placed your files in `src/main/orchid`, the usual workflow will be via the task `orchidServe`, which builds the site
 and starts an internal webserver on `localhost` to view it (on port 8080, so `http://localhost:8080`, by default).
+
+```
+sbt:orchid-play> orchidServe
+Using the following modules: 
+--------------------
+ * com.eden.orchid.StandardModule
+
+Auto-loaded modules: 
+--------------------
+ * com.eden.orchid.bsdoc.BsDocModule
+ * com.eden.orchid.impl.compilers.markdown.FlexmarkModule
+ * com.eden.orchid.impl.compilers.pebble.PebbleModule
+ * com.eden.orchid.pages.PagesModule
+ * com.eden.orchid.plugindocs.PluginDocsModule
+
+Flag values: 
+--------------------
+-adminTheme: Default
+-baseUrl: /
+-defaultTemplateExtension: peb
+-dest: /Users/swaldman/tmp/orchid-play/target/orchid
+-dryDeploy: false
+-environment: debug
+-logLevel: VERBOSE
+-port: 8080
+-src: /Users/swaldman/tmp/orchid-play/src/main/orchid
+-task: serve
+-theme: BsDoc
+-version: 0.1.0-SNAPSHOT
+
+[INFO] Orchid: Running Orchid version 0.17.6, site version 0.1.0-SNAPSHOT in debug environment
+[INFO] OrchidWebserver: Webserver Running at http://localhost:8080
+[INFO] OrchidWebsocket: Websocket running at http://localhost:8081/
+[INFO] TaskServiceImpl: Build Starting...
+[INFO] GeneratorServiceImpl: Indexing [10000: assets]
+[INFO] GeneratorServiceImpl: Indexing [1000: home]
+[INFO] GeneratorServiceImpl: Indexing [1000: pages]
+[INFO] GeneratorServiceImpl: Indexing [11: sitemap]
+[INFO] GeneratorServiceImpl: Generating [10000: assets]
+[INFO] GeneratorServiceImpl: Generating [1000: home]
+[INFO] GeneratorServiceImpl: Generating [1000: pages]
+[INFO] GeneratorServiceImpl: Generating [11: sitemap]
+
+Build Metrics: 
+┌───────┬────────────┬───────────────┬─────────────────┬───────────────────────────┬─────────────────────────────┐
+│       │ Page Count │ Indexing Time │ Generation Time │ Mean Page Generation Time │ Median Page Generation Time │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│ pages │     3      │     34ms      │      61ms       │           18ms            │            19ms             │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│  home │     2      │     17ms      │      695ms      │           347ms           │            678ms            │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│ TOTAL │          5 │         155ms │           780ms │                     150ms │                        19ms │
+└───────┴────────────┴───────────────┴─────────────────┴───────────────────────────┴─────────────────────────────┘
+
+Build Complete
+Generated 5 pages in 1s 603ms
+
+[WARN] Warnings:
+[WARN] ModularList: 
+[WARN]     - OrchidComponent type [recentPosts] could not be found (on page 'Orchid Starter' at http://localhost:8080)
+[WARN]     - OrchidMenuFactory type [wikiSections] could not be found (on page 'Orchid Starter' at http://localhost:8080)
+[WARN]     - OrchidMenuFactory type [taxonomy] could not be found (on page 'Orchid Starter' at http://localhost:8080)
+
+
+Webserver Running at http://localhost:8080
+Hit [CTRL-C] to stop the server and quit Orchid
+
+```
 
 To just ensure that the site gets built without pausing to browse with a webserver, use `orchidBuild` instead of `orchidServe`.
 
