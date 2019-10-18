@@ -110,7 +110,7 @@ libraryDependencies += orchidComponent( "OrchidCore" )
 
 /* Themes -- see https://orchid.netlify.com/themes */
 /*                                                 */
-/* Don't forget to set 'orchidTheme' in build,sbt! */
+/* Don't forget to set 'orchidTheme' in build.sbt! */
 
 // libraryDependencies += orchidComponent( "OrchidBsDoc" )
 // libraryDependencies += orchidComponent( "OrchidCopper" )
