@@ -2,12 +2,12 @@
 
 An [sbt](https://www.scala-sbt.org/) plugin for the [Orchid static site generator](https://orchid.netlify.com/).
 
-    * [Introduction](#introduction)
-    * [Basic Use](#basic-use)
-    * [Configuration](#configuration)
-    * [Setup](#setup)
-    * [Appendix](#appendix)
-      * [Configuration Settings (build\.sbt)](#configuration-settings-buildsbt)
+* [Introduction](#introduction)
+* [Basic Use](#basic-use)
+* [Configuration](#configuration)
+* [Setup](#setup)
+* [Appendix](#appendix)
+  * [Configuration Settings (build\.sbt)](#configuration-settings-buildsbt)
       
 ### Introduction
 
