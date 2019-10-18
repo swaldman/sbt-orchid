@@ -53,10 +53,7 @@ repository.
 However, adding the plugin alone is _not_ usually sufficient to get a workable installation. _Orchid_ is configured in large part
 by dynamically loading a variety of themes and plugins, which you will want to add the the `libraryDependencies` _of your build, not your project_.
 
-An easy, clean way to deal with that is just to add these extra dependencies in your `project/plugins.sbt` file.
-
-Here is an example to get you started:
-
+An easy, clean way to deal with that is just to add these extra dependencies in your `project/plugins.sbt` file:
 ```
 resolvers += Resolver.jcenterRepo // hosts Orchid and its components
 
