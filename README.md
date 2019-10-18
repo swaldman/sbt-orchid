@@ -36,10 +36,7 @@ Auto-loaded modules:
  * com.eden.orchid.bsdoc.BsDocModule
  * com.eden.orchid.impl.compilers.markdown.FlexmarkModule
  * com.eden.orchid.impl.compilers.pebble.PebbleModule
-
 ...
-...
-
 Webserver Running at http://localhost:8080
 Hit [CTRL-C] to stop the server and quit Orchid
 
