@@ -18,7 +18,7 @@ For information about what the source directory should contain, it's best to go 
 
 **Note: The gradle-project directory `src/orchid/resources` referred to in the tutorials becomes `src/main/orchid` (with _no_ "resources" directory) under this sbt plugin.**
 
-If you don't like this choice, you can define any soure directory you'd like for your Orchid site via the setting `orchidSource`.
+If you don't like this choice, you can define any source directory you'd like for your Orchid site via the setting `orchidSource`.
 
 ---
 
