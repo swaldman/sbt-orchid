@@ -1,7 +1,7 @@
 # sbt-orchid
----
+
 **This project has been [folded into the main Orchid project](https://orchid.run/wiki/user-manual/getting-started/quickstart#sbt), and will be maintained there rather than here!**
----
+
 An [sbt](https://www.scala-sbt.org/) plugin for the [Orchid static site generator](https://orchid.netlify.com/).
 
 * [Introduction](#introduction)
